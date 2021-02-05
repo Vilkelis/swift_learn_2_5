@@ -116,6 +116,12 @@ extension ProfileViewController: UITableViewDelegate {
             return .zero
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            toCatalogButtonTouch()
+        }
+    }
 }
 
 
